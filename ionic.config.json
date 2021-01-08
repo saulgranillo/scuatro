@@ -1,0 +1,7 @@
+{
+  "name": "scuatro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
