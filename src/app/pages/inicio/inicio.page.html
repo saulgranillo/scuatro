@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ordenes de trabajo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-list>
+  <ion-item *ngFor="let c of componentes"
+            [routerLink]="c.redirecTo">
+            <!-- detail="true" para que aparezca la flechita tipo ios (no siempre es necesario)-->
+    <ion-icon slot="start" [name]="c.icon" color="primary"></ion-icon> <!--igual puedo poner el icono directo, lo que se mas facil-->
+    {{c.name}}
+  </ion-item>
+
+
+</ion-list>
+<!-- <ion-button routerLink="/alert">
+  Alert
+</ion-button>
+
+<ion-button routerLink="/action-sheet">
+  Accion
+</ion-button> -->
+
+</ion-content>
